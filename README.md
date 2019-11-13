@@ -31,6 +31,7 @@ ssh -i id_rsa opc@132.145.83.122
 
 ## Topology
 ![](images/00-Topology.png)
+
 ## Components
 .....
 
