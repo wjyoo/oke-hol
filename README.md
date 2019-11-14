@@ -35,10 +35,9 @@ ssh -i id_rsa 사용자명@132.145.83.122
 
 ## Hands-On 순서
 
-1. [OCI(Oracle Cloud Infrastructure) 환경 확인하기](./1.oci.md)
-2. [Kubernetes Cluster 환경에 접속하기](./2.oke.md)
-3. [Developer Cloud Service 에 접속하기](./3.devcs.md)
-4. [Developer Cloud Service 에서 Build 생성하기](./4.cicd.md)
-5. [Application 확인하기](./5.app.md)]
+1. [Oracle Kubernetes 환경 확인하기](./oke.md)
+1. [Developer Cloud Service 에 접속하기](./devcs.md)
+1. [Developer Cloud Service 에서 Build 생성하기](./cicd.md)
+1. [Application 확인하기](./app.md)]
    
 ***
