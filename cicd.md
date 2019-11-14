@@ -62,11 +62,8 @@
 1. Steps를 누른 후 Add Step --> Docker --> Docker Login을 선택합니다.
     ![](images/devcs_step_dockerlogin1.png)
 
-1. Steps를 누른 후 Add Step --> Docker --> Docker Login을 선택합니다.
-    ![](images/devcs_step_dockerlogin2.png)
-
 1. 앞에서 등록한 OCIR Docker Registry인 OCIR1 을 선택하면 자동으로 계정정보가 입력됩니다.
-    ![](images/devcs_step_dockerbuild1.png)
+    ![](images/devcs_step_dockerlogin2.png)
 
 1. 두번째 단계인 Docker Build를 선택합니다. 
     ![](images/devcs_step_dockerbuild1.png)
