@@ -16,8 +16,8 @@
 * SSH Terminal (windows Putty, macOS Terminal 등)
 
 ## Client 접속 환경
-ssh -i id_rsa opc@132.145.83.122
-실습 환경 접속 정보 받기
+ssh -i id_rsa 사용자명@132.145.83.122
+실습 개발 환경 접속 정보 받기
 
 ## Oracle Developer Cloud Service와 Oracle Kubernetes Engine
 ### Developer Cloud
@@ -29,17 +29,16 @@ ssh -i id_rsa opc@132.145.83.122
 다음 주소를 클릭합니다. 본인의 이메일 주소를 입력하면 실습을 위한 클라이언트 환경을 할당받을 수 있습니다.
 --- 여기서 이메일 입력, 제출 클릭하면 Private/Public Key (Putty, OpenSSH), IP, 접속 계정을 전달 받는다.
 
-## Topology
+## 시나리오
 ![](images/0.scenario_1.png)
 
-## Components
-.....
 
-## Hands-On Steps
+## Hands-On 순서
+
 1. [OCI(Oracle Cloud Infrastructure) 환경 확인하기](./1.oci.md)
 2. [Kubernetes Cluster 환경에 접속하기](./2.oke.md)
 3. [Developer Cloud Service 에 접속하기](./3.devcs.md)
 4. [Developer Cloud Service 에서 Build 생성하기](./4.cicd.md)
-5. [Application 확인하기][](./5.app.md)]
+5. [Application 확인하기](./5.app.md)]
    
 ***
