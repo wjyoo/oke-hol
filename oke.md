@@ -1,5 +1,5 @@
 
-## **STEP 1**: OCI(Oracle Cloud Infrastructure) 환경 확인하기
+## **STEP 1**: OKE(Oracle Container Engine for Kubernetes) 환경 확인하기
 
 ### 
 > ***Compartment***   

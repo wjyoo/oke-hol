@@ -1,17 +1,17 @@
-# CI/CD with Oracle Kubernetes Hands-On
+# CI/CD with OKE(Oracle Container Engine for Kubernetes) Hands-On
  (Oracle Modern Cloud Day 2019의 Tech Hands-on Track)
 
-![](images/header.png)
+![](images/header_redwood_3.png)
  
 ## Introduction
-본 핸즈온 문서는 Oracle Developer Cloud Service를 사용하여 간단한 샘플 Application을 Oracle Kubernetes Engine에 배포하고 CI/CD 기능을 활용해 자동으로 빌드하고 배포하는 과정을 다루고 있습니다. 본 과정을 통해서 기본적인 오라클 Devleloper Cloud의 CI/CD 기능과 Oracle Kubernetes의 기능들을 경험을 해볼 수 있습니다.
+본 핸즈온 문서는 Oracle Developer Cloud Service를 사용하여 간단한 샘플 Application을 Oracle Container Engine for Kubernetes 에 배포하고 CI/CD 기능을 활용해 자동으로 빌드하고 배포하는 과정을 다루고 있습니다. 본 과정을 통해서 기본적인 오라클 Devleloper Cloud의 CI/CD 기능과 Oracle Kubernetes의 기능들을 경험을 해볼 수 있습니다.
 
 ## Objectives
-* Oracle Cloud Kubernetes Engine의 이해
-*
+* OKE(Oracle Container Engine for Kubernetes) 의 이해
+* Developer Cloud Service의 CI/CD 의 이해
 
 ## Required Artifacts
-* 인터넷 접속 가능한 랩탑
+* 인터넷 접속 가능한 PC
 * OCI (Oracle Cloud Infrastructure) 계정
 * SSH Terminal (windows Putty, macOS Terminal 등)
 
@@ -19,10 +19,10 @@
 ssh -i id_rsa 사용자명@132.145.83.122
 실습 개발 환경 접속 정보 받기
 
-## Oracle Developer Cloud Service와 Oracle Kubernetes Engine
+## Oracle Developer Cloud Service와 Oracle Container Engine for Kubernetes 
 ### Developer Cloud
 설명
-### Oracle Kubernetes Engine
+### Oracle Container Engine for Kubernetes (OKE)
 설명 
 
 ## 실습을 위한 클라이언트 환경
