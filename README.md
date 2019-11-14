@@ -30,14 +30,14 @@ ssh -i id_rsa opc@132.145.83.122
 --- 여기서 이메일 입력, 제출 클릭하면 Private/Public Key (Putty, OpenSSH), IP, 접속 계정을 전달 받는다.
 
 ## Topology
-![](images/00-Topology.png)
+![](images/0.scenario_1.png)
 
 ## Components
 .....
 
 ## Hands-On Steps
 1. [OCI(Oracle Cloud Infrastructure) 환경 확인하기](./1.oci.md)
-1. [Kubernetes Cluster 환경에 접속하기](./2.oke.md)
+2. [Kubernetes Cluster 환경에 접속하기](./2.oke.md)
 3. [Developer Cloud Service 에 접속하기](./3.devcs.md)
 4. [Developer Cloud Service 에서 Build 생성하기](./4.cicd.md)
 5. [Application 확인하기][](./5.app.md)]
