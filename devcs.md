@@ -27,8 +27,9 @@
 1. OCIR을 연결하기 위햇 Developer Cloud Service에서 Docker 메뉴를 클릭해보겠습니다. Docker 메뉴에서는 외부 Docker Repository와 연결하는 기능을 제공해서 docker image를 가져오거나 push를 할 수 있는 기능을 제공합니다. 'Link External Registry'를 클릭합니다.
 ![](images/devcs_ocir_connect1.png)
 
-1. 아래의 정보와 같이 입력합니다.
+1. 아래의 정보와 같이 입력합니다. 
 ![](images/devcs_ocir_connect3.png)
+
 Registry Name : 영문으로 입력
 Registry URL : https://icn.ocir.io
 Authentication : Basic 선택
