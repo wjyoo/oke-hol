@@ -8,7 +8,7 @@
 
 ## Objectives
 * OKE(Oracle Container Engine for Kubernetes) 의 이해
-* Developer Cloud Service의 CI/CD 의 이해
+* Developer Cloud Service의 CI/CD 확인
 
 ## Required Artifacts
 * 인터넷 접속 가능한 PC
