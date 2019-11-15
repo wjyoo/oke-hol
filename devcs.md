@@ -28,7 +28,8 @@
 ![](images/devcs_ocir_connect1.png)
 
 1. 아래의 정보와 같이 입력합니다. 
-![](images/devcs_ocir_connect3.png)
+   
+    ![](images/devcs_ocir_connect3.png)
 
 Registry Name : 영문으로 입력
 Registry URL : https://icn.ocir.io
@@ -40,6 +41,7 @@ Authentication : Basic 선택
 
 1. 정상적으로 입력이 되면 연결 테스트를 하고 Registry 정보가 보여지게 됩니다.
 ![](images/devcs_ocir_connect4.png)
+
 
 ## **STEP 3**: 실습 개발 환경에서 Developer Cloud Service의 Git로 소스 Push하기
 1. 실습 개발 환경에서 ls 를 해보면 cloud-native-oke 라는 폴더가 있습니다.
