@@ -2,6 +2,7 @@
 
 ## Lab 설명
 ![](images/scene2.png)
+
 이번 Lab에서는 Developer Cloud의 콘솔을 확인해 보고, 실습 개발 환경에 준비해 놓은 소스를 git 서버에 올립니다.
 
 ## **STEP 1**: Developer Cloud Service 환경 확인하기
