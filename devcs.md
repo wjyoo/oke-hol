@@ -30,15 +30,15 @@
 1. 아래의 정보와 같이 입력합니다. 
    
     ![](images/devcs_ocir_connect3.png)
+    ```
+    Registry Name : 영문으로 입력
+    Registry URL : https://icn.ocir.io
+    Authentication : Basic 선택
+        Username : <tenancy_name>/oracleidentitycloudservice/<oci_user_name>
+    예:) idsufmye3lml/oracleidentitycloudservice/test@oracle.com
 
-Registry Name : 영문으로 입력
-Registry URL : https://icn.ocir.io
-Authentication : Basic 선택
-    Username : <tenancy_name>/oracleidentitycloudservice/<oci_user_name>
-예:) idsufmye3lml/oracleidentitycloudservice/test@oracle.com
-
-    Password : 제공된 비밀번호 입력 (OCI->User Setting->Auth Tokens에서 생성 가능)
-
+        Password : 제공된 비밀번호 입력 (OCI->User Setting->Auth Tokens에서 생성 가능)
+    ```
 1. 정상적으로 입력이 되면 연결 테스트를 하고 Registry 정보가 보여지게 됩니다.
 ![](images/devcs_ocir_connect4.png)
 
