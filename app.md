@@ -1,3 +1,7 @@
+# 4. Application 확인, CI/CD 를 통한 자동화
+## Lab 설명
+![](images/scene4.png)
+이번 Lab에서는 Sample Application을 호출해보고 클라이언트에서 소스를 변경해서 자동으로 반영이 되는지를 확인합니다.
 
 ## **STEP 1**: Sample Application 확인하기
 

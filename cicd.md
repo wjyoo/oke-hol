@@ -1,5 +1,7 @@
-
-## Developer Cloud로 CI / CD 빌드 생성하기
+# 3. Developer Cloud Service 에서 Build 생성하기
+## Lab 설명
+![](images/scene3.png)
+이번 Lab에서는 Developer Cloud Service를 사용해서 CI/CD를 위한 Build를 생성합니다.
 
 자동으로 배포가 되게 하기 위해 Build를 생성하는 단계입니다. 1개의 Build에 총 4개 Step을 만들어야 하며 순서는 다음과 같습니다.
 ###

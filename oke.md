@@ -1,13 +1,11 @@
+# 1. Oracle Kubernetes 환경 확인하기
+## Lab 설명
+![](images/scene1.png)
+이번 Lab에서는 미리 준비해 놓은 오라클 클라우드에 접속해 보고, 실습 개발 환경에 SSH로 접속해서 Kubernetes CLI 명령어를 실행해봅니다.
 
 ## **STEP 1**: OKE(Oracle Container Engine for Kubernetes) 환경 확인하기
 
-### 
-> ***Compartment***   
-> .
-
-먼저 OCI Console에 로그인합니다.
-
-1. https://console.us-ashburn-1.oraclecloud.com 접속 후 Tenant 입력 > **Continue** 클릭
+1. 먼저 OCI Console에 로그인합니다. https://console.us-ashburn-1.oraclecloud.com 접속 후 Tenant 입력 > **Continue** 클릭
 ![](images/oci_login_tenant.png)
 
 2. Identity Provider를 oracleidentitycloudservice 선택(Default) > **Continue** 클릭

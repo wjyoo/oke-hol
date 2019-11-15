@@ -1,16 +1,15 @@
+# 2. Developer Cloud Service 에 접속하기
+
+## Lab 설명
+![](images/scene2.png)
+이번 Lab에서는 Developer Cloud의 콘솔을 확인해 보고, 실습 개발 환경에 준비해 놓은 소스를 git 서버에 올립니다.
 
 ## **STEP 1**: Developer Cloud Service 환경 확인하기
-
-### 
-> ***Compartment***   
-> .
-
-Developer Cloud Service 인스턴스 Console에 접속합니다.
-
-1. 이미 1개의 인스턴스를 생성해 놓았습니다. 오른쪽에 햄버거 버튼을 클릭한 후 Access Service Instance 를 클릭해서 해당 인스턴스의 콘솔 화면으로 이동합니다.
+1. Developer Cloud Service 인스턴스 Console에 접속합니다.
+이미 1개의 인스턴스를 생성해 놓았습니다. 오른쪽에 햄버거 버튼을 클릭한 후 Access Service Instance 를 클릭해서 해당 인스턴스의 콘솔 화면으로 이동합니다.
 ![](images/devcs_1.png)
 
-2. 미리 준비해 놓은 sample_project 를 선택합니다.
+1. 미리 준비해 놓은 sample_project 를 선택합니다.
 ![](images/devcs_2.png)
 
 3. Developer Cloud Service의 Project는 개발환경에 필요한 통합 된 기능을 모두 제공합니다. Git 리파지토리, Maven 리파지토리, Build 파이프라인, Agile 개발을 위한 Code Review기능, Wiki등을 제공합니다. 

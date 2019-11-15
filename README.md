@@ -30,7 +30,7 @@ ssh -i id_rsa 사용자명@140.238.18.26
 --- 여기서 이메일 입력, 제출 클릭하면 Private/Public Key (Putty, OpenSSH), IP, 접속 계정을 전달 받는다.
 
 ## 시나리오
-![](images/0.scenario_1.png)
+![](images/sceneall.png)
 
 
 ## Hands-On 순서
@@ -38,5 +38,5 @@ ssh -i id_rsa 사용자명@140.238.18.26
 1. [Oracle Kubernetes 환경 확인하기](./oke.md)
 1. [Developer Cloud Service 에 접속하기](./devcs.md)
 1. [Developer Cloud Service 에서 Build 생성하기](./cicd.md)
-1. [CI/CD 를 통한 자동화](./app.md)
+1. [Application 확인, CI/CD 를 통한 자동화](./app.md)
 ***
