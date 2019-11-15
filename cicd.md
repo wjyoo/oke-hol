@@ -112,3 +112,10 @@
 
 1. 에러가 발생한 경우에는 이곳에서 build log를 확인할 수 있습니다. 
     ![](images/devcs_buildlog.png)
+
+
+이번 Lab을 모두 마치셨습니다.
+
+----
+다음 Lab 으로 이동  
+[4. Application 확인, CI/CD 를 통한 자동화](./app.md)

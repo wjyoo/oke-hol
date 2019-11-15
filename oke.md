@@ -90,3 +90,8 @@ http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-da
 ![](images/kube_dashboard_1.png)
 왼쪽 메뉴에서 노드 와 서비스를 눌러 보면 위에서 명령어로 입력한 정보와 동일한 것을 확인하실 수 있습니다.
 
+이번 Lab을 모두 마치셨습니다.
+
+----
+다음 Lab 으로 이동  
+[2. Developer Cloud Service 에 접속하기](./devcs.md)

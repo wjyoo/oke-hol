@@ -85,3 +85,10 @@ Authentication : Basic 선택
     ```
 1. Developer Cloud 에 가서 소스가 모두 반영되었는지 확인해보도록 하겠습니다. Git 메뉴를 클릭하면 파일들이 생성된 것을 확인할 수 있습니다.
    ![](images/devcs_git_push.png)
+
+
+이번 Lab을 모두 마치셨습니다.
+
+----
+다음 Lab 으로 이동  
+[3. Developer Cloud Service 에서 Build 생성하기](./cicd.md)
