@@ -24,7 +24,7 @@
 <details>
 <summary><i>직접 연결하는 방법은 여기에서 확인하실 수 있습니다.
 </i></summary>
-> Developer Cloud Service에서 OCIR(Oracle Cloud Infrastructure Registry) 연결하기 
+    > Developer Cloud Service에서 OCIR(Oracle Cloud Infrastructure Registry) 연결하기 
 
 1. OCIR은 이전 Lab에서 확인했던 OCI 콘솔화면 중에서 Developer-> Containers->Registry 메뉴에서 확인할 수 있습니다.
 ![](images/devcs_ocir_connect2.png)
