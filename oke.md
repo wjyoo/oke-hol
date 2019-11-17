@@ -5,7 +5,7 @@
 
 ## **STEP 1**: OKE(Oracle Container Engine for Kubernetes) 환경 확인하기
 
-1. 먼저 OCI Console에 로그인합니다. https://console.us-ashburn-1.oraclecloud.com 접속 후 Tenant 입력 > **Continue** 클릭
+1. 먼저 OCI Console에 로그인합니다. https://console.ap-seoul-1.oraclecloud.com 접속 후 Tenant 입력 > **Continue** 클릭
 ![](images/oci_login_tenant.png)
 
 2. Identity Provider를 oracleidentitycloudservice 선택(Default) > **Continue** 클릭
@@ -55,7 +55,12 @@
 
     ![](images/oke_mysql_deploy.png)
 
-1. 아래 명령어를 통해서 서비스의 상태를 확인 해 봅니다. mysql이 배포가 된 것을 확인할 수 있습니다.    
+1. 아래 명령어를 통해서 서비스의 상태를 확인 해 봅니다. mysql이 배포가 된 것을 확인할 수 있습니다.       
+    ```
+    kubectl get deployment
+    kubectl get pod
+    kubectl get service
+    ```
    ![](images/oke_mysql_kubectl.png)
    
 

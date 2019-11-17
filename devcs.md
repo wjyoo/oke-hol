@@ -6,7 +6,10 @@
 이번 Lab에서는 Developer Cloud의 콘솔을 확인해 보고, 실습 개발 환경에 준비해 놓은 소스를 git 서버에 올립니다.
 
 ## **STEP 1**: Developer Cloud Service 환경 확인하기
-1. Developer Cloud Service 인스턴스 Console에 접속합니다.
+1. 클라우드 콘솔 왼쪽메뉴에서 플랫폼 서비스 --> Developer를 클릭합니다.
+![](images/gotodevcs.png)
+
+1. 새로운 창이 뜨면서 Developer Cloud Service 인스턴스 Console에 접속합니다.
 이미 1개의 인스턴스를 생성해 놓았습니다. 오른쪽에 햄버거 버튼을 클릭한 후 Access Service Instance 를 클릭해서 해당 인스턴스의 콘솔 화면으로 이동합니다.
 ![](images/devcs_1.png)
 
@@ -60,7 +63,7 @@
 1. 실습 개발 환경에서 ls 를 해보면 cloud-native-oke 라는 폴더가 있습니다.
     ```
     [user301@mcdhol2019 ~]$ ls
-    cloud-native-oke  mysql-deployment.yaml  oci_api_key.pem  oke-admin-service-account.yaml
+    cloud-native-oke  mysql-deployment.yaml
     ```
 1. cloud-native-oke는 node.js로 되어 있는 web application입니다. 해당 폴더로 이동합니다.
    ```
