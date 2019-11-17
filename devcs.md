@@ -62,7 +62,7 @@
 </details>
 
 
-## **STEP 3**: 실습 개발 환경에서 Developer Cloud Service의 Git로 소스 Push하기
+## **STEP 2**: 실습 개발 환경에서 Developer Cloud Service의 Git로 소스 Push하기
 1. 실습 개발 환경에서 ls 를 해보면 cloud-native-oke 라는 폴더가 있습니다.
     ```
     [user301@mcdhol2019 ~]$ ls
