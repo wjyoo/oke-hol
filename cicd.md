@@ -30,39 +30,55 @@
 ![](images/devcs_addgit3.png)
 
 ## **STEP 2**: 환경변수 세팅
-1. 다음올 환경변수 값을 세팅하기 위해 Parameter를 선택합니다. 이 값들은 build Step에서 환경 변수로 사용합니다.
+1. 환경변수는 4개를 세팅합니다. 환경변수 값을 세팅하기 위해 Parameters를 선택합니다. 이 값들은 build Step에서 환경 변수로 사용합니다.
    오른쪽에 Add Parameter 를 선택 하고 String Parameter를 선택한 후 아래의 값을 입력합니다.
     ![](images/devcs_param1.png)
 
 1. 먼저 Kubernetes 주소를 변수로 입력합니다.   
     ![](images/devcs_param2.png)
-    ```
-    Name : KUBE_URL
-    Default Value : https://[Kubernetes Master 서버 주소]
-    ```
-    앞에 https 를 반드시 입력해야 합니다.
-    여기서 Kubernetes 주소는 OCI 콘솔의 Containers->Clusters에서 확인이 가능합니다.
-    ![](images/devcs_param21.png)
-
-1. 다시 Add Parameter -> String Parameter를 선택해서 다음을 입력합니다.
     
-    > Name: KUBE_TOKEN<br>
+    > Name : <b>KUBE_URL</b><br>
+    > Default Value : https://[Kubernetes Master 서버 주소]
+    
+    앞에 https 를 반드시 입력해야 합니다.
+    
+    Kubernetes 주소는 실습개발 환경에서 다음의 명령어로 확인이 가능합니다.
+    ```
+    $ kubectl cluster-info
+    Kubernetes master is running at https://c4wmnjsmnst.ap-tokyo-1.clusters.oci.oraclecloud.com:6443
+    ```
+
+    또한 OCI 콘솔의 Containers->Clusters에서 확인이 가능합니다.
+    ![](images/devcs_param21.png)
+    
+1. Add Parameter -> String Parameter를 선택해서 다음을 입력합니다.
+    
+    > Name: <b>KUBE_TOKEN</b><br>
     > Default Value : 아래의 명령어로 실습 개발 환경에서 실행을 한 후 가장 아래 부분에 나오는 Token값을 복사합니다.
     ```
     $ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep oke-admin | awk '{print $1}')
     ```
     ![](images/devcs_param3.png)
 
-1. 마지막으로 Add Parameter -> String Parameter를 선택한 후에 생성할 docker image의 이름을 변수로 넣어줍니다.
-이 Lab에서는 **sample-app** 이라는 이름을 그대로 사용하셔야 합니다.
-    ![](images/devcs_param4.png)
+1. Add Parameter -> String Parameter를 두번 더 합니다.
+이 Lab에서는 **sample-app** 이라는 이름을 사용합니다.
+    ![](images/devcs_param5.png)
     
-    - IMAGE_NAME 형식
-        > **{region_code}.ocir.io/{tenancy_namespace}**/sample-app
+    > NAME : <B>OCIR</b><br>
+    > Default Value형식 : **{region_code}.ocir.io**
       
       ``` 
-      예) Default Value : icn.ocir.io/idsufmye3lml/sample-app 
+      예) Default Value : icn.ocir.io (서울)
+      예) Default Value : nrt.ocir.io (일본)
       ```
+
+    > Name : <b>IMAGE_NAME</b<br>
+    > Default Value 형식 : **{tenancy_namespace}**/sample-app
+      
+      ``` 
+      예) Default Value : idsufmye3lml/sample-app 
+      ```
+
 
 1. 중간에 저장을 한번 하기 위해 Save버튼을 누릅니다.
 ![](images/devcs_param.png)
@@ -80,13 +96,10 @@
 1. 두번째 단계인 Docker Build를 선택합니다. 
     ![](images/devcs_step_dockerbuild1.png)
 
-1. 아래의 정보를 입력합니다.
-    - IMAGE_NAME 형식
-        > **{tenancy_namespace}**/sample-app
-    
+1. 아래의 정보와 동일하게 $IMAGE_NAME과 $BUILD_NUMBER라고 입력합니다.
     ```
         Docker Build
-        예) Image Name : idsufmye3lml/sample-app
+        Image Name : $IMAGE_NAME
         Version Tag : $BUILD_NUMBER
         Source : 
         Context Root in Workspace 선택
@@ -96,9 +109,10 @@
 1. 동일한 과정으로 Docker Push를 선택하고 아래의 정보를 입력합니다. 
     ```
     Docker Push
-    예) Image Name : idsufmye3lml/sample-app
+    Image Name : $IMAGE_NAME
+    Vresion Tag : $BUILD_NUMBER
     ```
-    ![](images/devcs_step_dockerbuild3.png)
+    ![](images/devcs_step_dockerbuild4.png)
 
 ## **STEP 4**: Kubernetes 에 Deploy 설정
 1. 마지막으로 Unix Shell을 선택합니다.
@@ -106,11 +120,11 @@
 
 1. kubernetes 에 deploy하는 단계 입니다. kube-oke-sample.yaml 파일을 실행하는 스크립트를 호출하기 위해 아래의 정보를 그대로 복사해서 입력합니다.  
     ```
-    export APP_IMAGE_NAME=$IMAGE_NAME:$BUILD_NUMBER
+    export APP_IMAGE_NAME=$OCIR/$IMAGE_NAME:$BUILD_NUMBER
     envsubst < kube-oke-sample.yml | kubectl --insecure-skip-tls-verify --server $KUBE_URL --token $KUBE_TOKEN apply -f -
     ```
     
-    ![](images/devcs_step_shell2.png)
+    ![](images/devcs_build_5.png)
 2. 위쪽에 Save 버튼을 누릅니다.
 
 ## **STEP 5**: Build
