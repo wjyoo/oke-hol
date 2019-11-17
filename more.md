@@ -37,6 +37,14 @@ http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-da
 ![](images/kube_dashboard_1.png)
 왼쪽 메뉴에서 노드 와 서비스를 눌러 보면 위에서 명령어로 입력한 정보와 동일한 것을 확인하실 수 있습니다.
 
+1. sample-app이 정상적으로 배포되었는지 확인하기 위해 Kubernetes Dashboard로 이동합니다.
+   ![](images/kube_dash_afterweb.png)
+
+2. 아래로 조금 스크롤을 해보면 구동중인 서비스를 확인할 수 있습니다. 배포시에 설정파일에 의해 Oracle 의 LoadBalancer과 자동으로 연결되어 집니다.
+   ![](images/kube_dashboard_app.png)
+
+1. 이전 Lab에서 소스를 변경 하게 되면, Kubernetes Dashboard에서 보면 Pod의 시간이 변경이 된 것을 확인할 수 있습니다. Build가 수행이 되면 Deployment를 새로 하게 되고 이때 Container를 담고 있는 Pod가 새로운 Pod로 교체가 되게 됩니다.
+![](images/kube_pod_change.png)
 ----
 
 모든 Lab 과정을 마쳤습니다.

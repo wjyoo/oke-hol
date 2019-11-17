@@ -20,8 +20,16 @@
 5.  좌측 상단의 햄버거 모양의 메뉴 아이콘 클릭 > Developer Services 선택 > Container Clusters(OKE) 선택
 ![](images/oci_oke_cluster.png)
 
-6. 미리 생성되어 있는 클러스터가 보일 것입니다. 생성되어 있는 클러스터를 클릭합니다.
-![](images/oci_oke_cluster2.png)
+1. 여러분들에게 할당된 리전을 선택합니다. 
+   Tenancy : mcd133 ~ mcd150 까지는 Tokyo 리전을 선택합니다. 나머지는 서울을 사용하시면 됩니다.
+    ![](images/region_select.png)
+1. 좌측에 Compartment는 부서와 같은 개념으로 MCD라는 Compartment를 준비해 놓았습니다.
+   ![](images/pick_compartment.png)
+1. MCD 를 선택합니다.
+![](images/mcd_select.png)
+
+1. 미리 생성되어 있는 클러스터가 보일 것입니다. 생성되어 있는 클러스터를 클릭합니다.
+![](images/mcd_select2.png)
 
 7. Node Pools에 1개의 Node가 생성되어 있는 것을 확인합니다. 
 ![](images/oci_oke_cluster3.png)

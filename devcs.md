@@ -51,6 +51,9 @@
         - OCIR 로그인을 위한 임시 토큰 발행
             > OCI Console 로그인 후 우측 상단의 사용자 아이콘 클릭 > Profile 바로 밑의 사용자 아이디를 클릭 > 좌측 Auth Tokens 클릭 > Generate Token 클릭 > Description에 **ocir-token** 입력 후 Generate Token 클릭 > 생성된 토큰을 복사
 
+            > 실습 개발 환경에 auth_token 파일을 복사해 두었습니다.
+            > cat auth_token 명령으로 확인하실 수 있습니다.
+
         ![](images/oci_auth_token.gif)
 
     
@@ -63,7 +66,7 @@
 1. 실습 개발 환경에서 ls 를 해보면 cloud-native-oke 라는 폴더가 있습니다.
     ```
     [user301@mcdhol2019 ~]$ ls
-    cloud-native-oke  mysql-deployment.yaml
+    auth_token  cloud-native-oke  mysql-deployment.yaml
     ```
 1. cloud-native-oke는 node.js로 되어 있는 web application입니다. 해당 폴더로 이동합니다.
    ```

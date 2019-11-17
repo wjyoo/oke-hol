@@ -6,13 +6,20 @@
 
 ## **STEP 1**: Sample Application 확인하기
 
-1. sample-app이 정상적으로 배포되었는지 확인하기 위해 Kubernetes Dashboard로 이동합니다.
-   ![](images/kube_dash_afterweb.png)
+1. 서비스를 확인하기 위해서는 먼저 서비스 IP를 확인해야 합니다. 다음 명령어를 실습 개발 환경에서 수행합니다.
+    ```
+    $ kubectl get services
+    NAME         TYPE           CLUSTER-IP     EXTERNAL-IP       PORT(S)          AGE
+    kubernetes   ClusterIP      10.96.0.1      <none>            443/TCP          15h
+    mysql        ClusterIP      10.96.18.163   <none>            3306/TCP         128m
+    oke-sample   LoadBalancer   10.96.131.94   158.101.132.146   8080:32010/TCP   30s
+    ```
+1. 여기서 oke-sample의 외부 IP 정보가 나옵니다. 158.101.132.146 포트는 8080 인 것을 확인할 수 있습니다.
+이처럼 각자의 IP를 확인해서 브라우저에 http://<IP Address>:8080/ 으로 호출해 봅니다.
 
-1. 아래로 조금 스크롤을 해보면 구동중인 서비스를 확인할 수 있습니다. 배포시에 설정파일에 의해 Oracle 의 LoadBalancer과 자동으로 연결되어 집니다.
-   ![](images/kube_dashboard_app.png)
 
-1. 링크를 클릭하면 배포된 간단한 주소록 프로그램인 sample-app 이 열리게 됩니다.
+
+3. 링크를 클릭하면 배포된 간단한 주소록 프로그램인 sample-app 이 열리게 됩니다.
 ![](images/app1.png)
 
 ## **STEP 2**: 소스 변경 후 Git Repository 에 반영하기
@@ -45,8 +52,6 @@
 1. Developer Cloud 의 Builds 탭에서 보면 새로운 build가 자동으로 수행 된 것을 확인할 수 있습니다. Build 생성시에 Git Repository를 계속 모니터링하고 있다가 소스가 변경이 된 것을 감지해 Build가 자동 수행이 되도록 설정을 했기 때문입니다.
 ![](images/job_execute2.png)
 
-1. Kubernetes Dashboard에서 보면 Pod의 시간이 변경이 된 것을 확인할 수 있습니다. Build가 수행이 되면 Deployment를 새로 하게 되고 이때 Container를 담고 있는 Pod가 새로운 Pod로 교체가 되게 됩니다.
-![](images/kube_pod_change.png)
 
 1. Application 페이지를 Refresh 해보면 version 정보가 변경된 것을 확인 할 수 있습니다.
 ![](images/app2.png)
