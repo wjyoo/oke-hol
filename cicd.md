@@ -52,10 +52,14 @@
 
 1. 마지막으로 생성할 docker image의 이름을 변수로 넣어줍니다.
     ![](images/devcs_param4.png)
-    ```
-    Name : IMAGE_NAME
-    Default Value : icn.ocir.io/idsufmye3lml/wonjo/sample-app 
-    ```
+    
+    - IMAGE_NAME 형식
+        > **{region_code}.ocir.io/{tenancy_namespace}**/sample-app
+      
+      ``` 
+      예) Default Value : icn.ocir.io/idsufmye3lml/sample-app 
+      ```
+
 1. 중간에 저장을 한번 하기 위해 Save버튼을 누릅니다.
 ![](images/devcs_param.png)
 
@@ -72,9 +76,12 @@
     ![](images/devcs_step_dockerbuild1.png)
 
 1. 아래의 정보를 입력합니다.
+    - IMAGE_NAME 형식
+        > **{tenancy_namespace}**/sample-app
+    
     ```
         Docker Build
-        Image Name : idsufmye3lml/wonjo/sample-app
+        예) Image Name : idsufmye3lml/sample-app
         Version Tag : $BUILD_NUMBER
         Source : 
         Context Root in Workspace 선택
@@ -84,7 +91,7 @@
 1. 동일한 과정으로 Docker Push를 선택하고 아래의 정보를 입력합니다. 
     ```
     Docker Push
-    Image Name : idsufmye3lml/wonjo/sample-app
+    예) Image Name : idsufmye3lml/sample-app
     ```
     ![](images/devcs_step_dockerbuild3.png)
 

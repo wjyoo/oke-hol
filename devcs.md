@@ -40,7 +40,7 @@
         > regison_code는 https://docs.cloud.oracle.com/iaas/Content/General/Concepts/regions.htm 에서 확인가능
 
     1) Authentication : Basic 선택
-    1) Username : <tenancy_name>/<oci_user_name>
+    1) Username : <tenancy_namespace>/<oci_user_name>
     예:) idsufmye3lml/test@oracle.com
         - tenancy_name 확인
         ![](images/oci_tenancy_namespace.gif)
