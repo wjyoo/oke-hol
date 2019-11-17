@@ -64,7 +64,7 @@
 이 Lab에서는 **sample-app** 이라는 이름을 사용합니다.
     ![](images/devcs_param5.png)
     
-    > NAME : <B>OCIR</b><br>
+    > NAME : **OCIR**<br>
     > Default Value형식 : **{region_code}.ocir.io**
       
       ``` 
