@@ -19,7 +19,12 @@
 4. 그 중에서 먼저 Git Repository를 확인해 보도록 하겠습니다. 왼쪽 메뉴에서 Git를 클릭해 봅니다. Git Repository는 Github과 같이 소스 버전 관리를 할 수 있습니다.
 ![](images/devcs_4.png)
 
-## **STEP 2**: Developer Cloud Service에서 OCIR(Oracle Cloud Infrastructure Registry) 연결하기 
+5. 왼쪽 메뉴에서 Docker 메뉴를 누르면 OCIR의 Registry 정보가 보여지게 됩니다. 빠른 실습을 위해 이미 Developer Cloud와 Docker Registry인 OCIR이 연결이 되어 있습니다. 
+![](images/devcs_ocir_connect4.png)
+<details>
+<summary><i>직접 연결하는 방법은 여기에서 확인하실 수 있습니다.
+</i></summary>
+> Developer Cloud Service에서 OCIR(Oracle Cloud Infrastructure Registry) 연결하기 
 
 1. OCIR은 이전 Lab에서 확인했던 OCI 콘솔화면 중에서 Developer-> Containers->Registry 메뉴에서 확인할 수 있습니다.
 ![](images/devcs_ocir_connect2.png)
@@ -34,13 +39,14 @@
     Registry Name : 영문으로 입력
     Registry URL : https://icn.ocir.io
     Authentication : Basic 선택
-        Username : <tenancy_name>/oracleidentitycloudservice/<oci_user_name>
-    예:) idsufmye3lml/oracleidentitycloudservice/test@oracle.com
+        Username : <tenancy_name>/<oci_user_name>
+    예:) idsufmye3lml/test@oracle.com
 
-        Password : 제공된 비밀번호 입력 (OCI->User Setting->Auth Tokens에서 생성 가능)
+        Password : (OCI->User Setting->Auth Tokens에서 생성)
     ```
 1. 정상적으로 입력이 되면 연결 테스트를 하고 Registry 정보가 보여지게 됩니다.
 ![](images/devcs_ocir_connect4.png)
+</details>
 
 
 ## **STEP 3**: 실습 개발 환경에서 Developer Cloud Service의 Git로 소스 Push하기
