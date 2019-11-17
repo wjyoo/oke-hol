@@ -4,14 +4,15 @@
 
 이번 Lab에서는 Developer Cloud Service를 사용해서 CI/CD를 위한 Build를 생성합니다.
 
-자동으로 배포가 되게 하기 위해 Build를 생성하는 단계입니다. 1개의 Build에 총 4개 Step을 만들어야 하며 순서는 다음과 같습니다.
+자동으로 배포가 되게 하기 위해 Build를 생성하는 단계로 다음의 Task를 하게 됩니다.
 ###
-> 1. Docker Login
-> 2. Docker Build
-> 3. Docker Push 
-> 4. Kubernetes Deploy
+> 1. Git 저장소 선택
+> 2. 환경변수 세팅
+> 3. Docker Login, Build, Push
+> 4. Kubernetes 에 Deploy 설정
+> 5. Build
 
-
+## **STEP 1**: Git 저장소 선택
 1. Developer Cloud에서 왼쪽 메뉴에서 Builds 탭을 클릭합니다.
 ![](images/devcs_build1.png)
 
@@ -28,6 +29,7 @@
 1. Repository에서 sample-project.git을 선택합니다. 이때 Automatically perform build on SCM commit 버튼을 체크합니다. 이 부분이 바로 git에 소스가 변경이 되었을때 자동으로 이 build가 수행되도록 해주는 기능입니다.
 ![](images/devcs_addgit3.png)
 
+## **STEP 2**: 환경변수 세팅
 1. 다음올 환경변수 값을 세팅하기 위해 Parameter를 선택합니다. 이 값들은 build Step에서 환경 변수로 사용합니다.
    오른쪽에 Add Parameter 를 선택 하고 String Parameter를 선택한 후 아래의 값을 입력합니다.
     ![](images/devcs_param1.png)
@@ -63,6 +65,7 @@
 1. 중간에 저장을 한번 하기 위해 Save버튼을 누릅니다.
 ![](images/devcs_param.png)
 
+## **STEP 3**: Docker Login, Build, Push
 1. 오른쪽 상단의 Configure 버튼을 누릅니다.
    ![](images/devcs_configure.png)
 
@@ -95,6 +98,7 @@
     ```
     ![](images/devcs_step_dockerbuild3.png)
 
+## **STEP 4**: Kubernetes 에 Deploy 설정
 1. 마지막으로 Unix Shell을 선택합니다.
    ![](images/devcs_step_shell1.png)
 
@@ -107,6 +111,7 @@
     ![](images/devcs_step_shell2.png)
 2. 위쪽에 Save 버튼을 누릅니다.
 
+## **STEP 5**: Build
 3. 준비가 되었습니다. 바로 눌러서 Build를 해보겠습니다. Build Now 버튼을 누릅니다.
    ![](images/devcs_step_buildnow.png)
 4. 앞에서 설정한 파라미터 값을 변경할 수 있는 Popup이 뜹니다. Default 값을 이미 입력했기 때문에 Build Now 를 바로 누릅니다.
