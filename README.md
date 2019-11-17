@@ -16,11 +16,11 @@
 * SSH Terminal (windows Putty, macOS Terminal 등)
 
 ## 실습을 위한 클라이언트 개발 환경
-실습 개발 환경 IP : 140.238.18.26
-사용자명 : Paper로 제공
-Password : Paper로 제공
+* 실습 개발 환경 IP : 140.238.18.26
+* 사용자명 / Password : Paper로 제공
 
-ssh -i id_rsa 사용자명@140.238.18.26
+> 접속 방법  
+> ssh -i id_rsa 사용자명@140.238.18.26
 
 ## 시나리오
 ![](images/sceneall.png)
