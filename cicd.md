@@ -88,7 +88,8 @@
        <details>
         <summary><i>참고) OCI 콘솔에서 tenancy_name 확인하는 방법
         </i></summary>
-                ![](images/oci_tenancy_namespace.gif)
+        
+        ![](images/oci_tenancy_namespace.gif)
         </details>        
         
 1. 중간에 저장을 한번 하기 위해 Save버튼을 누릅니다.
