@@ -44,15 +44,17 @@
     여기서 Kubernetes 주소는 OCI 콘솔의 Containers->Clusters에서 확인이 가능합니다.
     ![](images/devcs_param21.png)
 
-1. 다시 String Parameter를 선택해서 다음을 입력합니다.
-    Name: KUBE_TOKEN
-    Default Value : 이전 Lab에서 아래의 명령어로 얻은 Token값을 넣습니다.
+1. 다시 Add Parameter -> String Parameter를 선택해서 다음을 입력합니다.
+    
+    > Name: KUBE_TOKEN<br>
+    > Default Value : 아래의 명령어로 실습 개발 환경에서 실행을 한 후 가장 아래 부분에 나오는 Token값을 복사합니다.
     ```
     $ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep oke-admin | awk '{print $1}')
     ```
     ![](images/devcs_param3.png)
 
-1. 마지막으로 생성할 docker image의 이름을 변수로 넣어줍니다.
+1. 마지막으로 Add Parameter -> String Parameter를 선택한 후에 생성할 docker image의 이름을 변수로 넣어줍니다.
+이 Lab에서는 **sample-app** 이라는 이름을 그대로 사용하셔야 합니다.
     ![](images/devcs_param4.png)
     
     - IMAGE_NAME 형식
@@ -102,7 +104,7 @@
 1. 마지막으로 Unix Shell을 선택합니다.
    ![](images/devcs_step_shell1.png)
 
-1. kubernetes 에 deploy하는 단계 입니다. kube-oke-sample.yaml 파일을 실행하는 스크립트를 호출하기 위해 아래의 정보를 입력합니다.  
+1. kubernetes 에 deploy하는 단계 입니다. kube-oke-sample.yaml 파일을 실행하는 스크립트를 호출하기 위해 아래의 정보를 그대로 복사해서 입력합니다.  
     ```
     export APP_IMAGE_NAME=$IMAGE_NAME:$BUILD_NUMBER
     envsubst < kube-oke-sample.yml | kubectl --insecure-skip-tls-verify --server $KUBE_URL --token $KUBE_TOKEN apply -f -
