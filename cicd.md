@@ -103,7 +103,7 @@
         Version Tag : $BUILD_NUMBER
         Source : 
         Context Root in Workspace 선택
-    ```
+    
     ![](images/devcs_step_dockerbuild2.png)    
 
 1. 동일한 과정으로 Docker Push를 선택하고 아래의 정보를 입력합니다. 
