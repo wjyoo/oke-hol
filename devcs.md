@@ -19,7 +19,7 @@
 4. 그 중에서 먼저 Git Repository를 확인해 보도록 하겠습니다. 왼쪽 메뉴에서 Git를 클릭해 봅니다. Git Repository는 Github과 같이 소스 버전 관리를 할 수 있습니다.
 ![](images/devcs_4.png)
 
-5. 왼쪽 메뉴에서 Docker 메뉴를 누르면 OCIR의 Registry 정보가 보여지게 됩니다. 빠른 실습을 위해 이미 Developer Cloud와 Docker Registry인 OCIR이 연결이 되어 있습니다. 
+5. 왼쪽 메뉴에서 Docker 메뉴를 누르면 OCIR의 Registry 정보가 보여지게 됩니다. 빠른 실습을 위해 이미 Developer Cloud와 Docker Registry인 OCIR이 연결이 되어 있습니다. 이는 Developer Cloud Service에서 Docker Image를 생성한 후에 OCIR에 쉽게 push를 할 수 있게 됩니다.
 ![](images/devcs_ocir_connect4.png)
 <details>
 <summary><i>참고) Developer Cloud Service에서 OCIR(Oracle Cloud Infrastructure Registry) 직접 연결하기
@@ -75,17 +75,13 @@
 2. 이 파일들을 Remote에 있는 Developer Cloud의 git Repository 에 push하기 위해 다음의 순서로 실행합니다.
    ```
     git init
-    git config --global user.name $USER
-    git config --global user.email "[제공된 이메일]"
-    git config credential.helper store
-
     git remote add origin [원격지 Git 주소]
     git pull origin master
-    Password for 'https://xxxxx@oracle.com@devcs1-danskbb.developer.ocp.oraclecloud.com':
+    Password for 'https://xxxxx@oracle.com@devcs1-mcd100.developer.ocp.oraclecloud.com':
     ```
     원격지 Git 주소는 Developer Cloud의 다음 화면에서 복사할 수 있습니다.
 ![](images/devcs_giturl.png)
-    git 비밀번호는 제공된 클라우드 계정에 대한 비밀번호 를 입력하시면 됩니다.
+    git 비밀번호는 제공된 클라우드 계정에 대한 비밀번호(Welcome123456#) 를 입력하시면 됩니다.
 
     ```
     remote: Counting objects: 3, done
