@@ -72,14 +72,22 @@
       예) Default Value : nrt.ocir.io (일본)
       ```
 
-    > Name : <b>IMAGE_NAME</b<br>
+    > Name : <b>IMAGE_NAME</b><br>
     > Default Value 형식 : **{tenancy_namespace}**/sample-app
       
       ``` 
       예) Default Value : idsufmye3lml/sample-app 
       ```
 
+    1) tenancy_namespace 는 실습개발환경에서 확인하실 수 있습니다.
+        ```
+        cat oci_info |grep name
+        ```
+        ![](images/tenancy_info.png)
 
+    2) OCI 콘솔에서 tenancy_name 확인하는 방법
+        ![](images/oci_tenancy_namespace.gif)
+        
 1. 중간에 저장을 한번 하기 위해 Save버튼을 누릅니다.
 ![](images/devcs_param.png)
 
