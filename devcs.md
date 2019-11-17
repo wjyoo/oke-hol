@@ -22,9 +22,8 @@
 5. 왼쪽 메뉴에서 Docker 메뉴를 누르면 OCIR의 Registry 정보가 보여지게 됩니다. 빠른 실습을 위해 이미 Developer Cloud와 Docker Registry인 OCIR이 연결이 되어 있습니다. 
 ![](images/devcs_ocir_connect4.png)
 <details>
-<summary><i>직접 연결하는 방법은 여기에서 확인하실 수 있습니다.
+<summary><i>참고) Developer Cloud Service에서 OCIR(Oracle Cloud Infrastructure Registry) 직접 연결하기
 </i></summary>
-    > Developer Cloud Service에서 OCIR(Oracle Cloud Infrastructure Registry) 연결하기 
 
 1. OCIR은 이전 Lab에서 확인했던 OCI 콘솔화면 중에서 Developer-> Containers->Registry 메뉴에서 확인할 수 있습니다.
 ![](images/devcs_ocir_connect2.png)
@@ -34,16 +33,24 @@
 
 1. 아래의 정보와 같이 입력합니다. 
    
-    ![](images/devcs_ocir_connect3.png)
-    ```
-    Registry Name : 영문으로 입력
-    Registry URL : https://icn.ocir.io
-    Authentication : Basic 선택
-        Username : <tenancy_name>/<oci_user_name>
-    예:) idsufmye3lml/test@oracle.com
+   ![](images/devcs_ocir_connect3.png)
+    1) Registry Name : 영문으로 입력
+    1) Registry URL 
+        > **{region_code}.ocir.io** (서울 리전의 예시: icn.ocir.io)<br>
+        > regison_code는 https://docs.cloud.oracle.com/iaas/Content/General/Concepts/regions.htm 에서 확인가능
 
-        Password : (OCI->User Setting->Auth Tokens에서 생성)
-    ```
+    1) Authentication : Basic 선택
+    1) Username : <tenancy_name>/<oci_user_name>
+    예:) idsufmye3lml/test@oracle.com
+        - tenancy_name 확인
+        ![](images/oci_tenancy_namespace.gif)
+    1) Password : (OCI->User Setting->Auth Tokens에서 생성)
+        - OCIR 로그인을 위한 임시 토큰 발행
+            > OCI Console 로그인 후 우측 상단의 사용자 아이콘 클릭 > Profile 바로 밑의 사용자 아이디를 클릭 > 좌측 Auth Tokens 클릭 > Generate Token 클릭 > Description에 **ocir-token** 입력 후 Generate Token 클릭 > 생성된 토큰을 복사
+
+        ![](images/oci_auth_token.gif)
+
+    
 1. 정상적으로 입력이 되면 연결 테스트를 하고 Registry 정보가 보여지게 됩니다.
 ![](images/devcs_ocir_connect4.png)
 </details>
