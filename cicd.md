@@ -105,7 +105,7 @@
 1. 앞에서 등록한 OCIR Docker Registry인 OCIR1 을 선택하면 자동으로 계정정보가 입력됩니다.
     ![](images/devcs_step_dockerlogin2.png)
 
-1. 두번째 단계인 Docker Build를 선택합니다. 
+1. 두번째 단계인 Add Step --> Docker -->Docker Build를 선택합니다. 
     ![](images/devcs_step_dockerbuild1.png)
 
 1. 아래의 정보와 동일하게 $IMAGE_NAME과 $BUILD_NUMBER라고 입력합니다.
