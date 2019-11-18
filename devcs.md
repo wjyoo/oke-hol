@@ -85,9 +85,12 @@
     git pull origin master
     Password for 'https://xxxxx@oracle.com@devcs1-mcd100.developer.ocp.oraclecloud.com':
     ```
+
     원격지 Git 주소는 Developer Cloud의 다음 화면에서 복사할 수 있습니다.
-![](images/devcs_giturl.png)
+
     git 비밀번호는 제공된 클라우드 계정에 대한 비밀번호(Welcome123456#) 를 입력하시면 됩니다.
+
+    ![](images/devcs_giturl.png)
 
     ```
     remote: Counting objects: 3, done
