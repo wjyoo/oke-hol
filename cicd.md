@@ -73,12 +73,8 @@
 
     > Name : <b>IMAGE_NAME</b><br>
     > Default Value 형식 : **{tenancy_namespace}**/sample-app
-      
-      ``` 
-      예) Default Value : idsufmye3lml/sample-app
-      ```
 
-    - tenancy_namespace 는 실습개발환경에서 확인하실 수 있습니다.
+    - tenancy_namespace 는 실습개발환경에서 다음과 같이 얻을 수 있습니다.
         ```
         cat oci_info |grep name
         ```
@@ -118,7 +114,7 @@
 
     ![](images/devcs_step_dockerbuild2.png)    
 
-1. 동일한 과정으로 Docker Push를 선택하고 아래의 정보를 입력합니다. 
+1. 동일한 과정으로 Add Step --> Docker --> Docker Push를 선택하고 아래의 정보를 입력합니다. 
     ```
     Docker Push
     Image Name : $IMAGE_NAME
