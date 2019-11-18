@@ -115,6 +115,7 @@
         Version Tag : $BUILD_NUMBER
         Source : 
         Context Root in Workspace 선택
+    ```
     
     ![](images/devcs_step_dockerbuild2.png)    
 
@@ -124,6 +125,7 @@
     Image Name : $IMAGE_NAME
     Vresion Tag : $BUILD_NUMBER
     ```
+
     ![](images/devcs_step_dockerbuild4.png)
 
 ## **STEP 4**: Kubernetes 에 Deploy 설정
