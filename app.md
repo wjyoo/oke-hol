@@ -33,7 +33,7 @@
     exports.version = version;
     ```
     
-2. 계정으로 Home에서 다음의 명령어를 입력합니다.
+2. 실습개발 환경 계정의 Home에서 다음의 명령어를 입력합니다.
     ```
     cd cloud-native-oke
     cd routes
