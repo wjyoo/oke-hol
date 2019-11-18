@@ -16,7 +16,7 @@
 1. Developer Cloud에서 왼쪽 메뉴에서 Builds 탭을 클릭합니다.
 ![](images/devcs_build1.png)
 
-1. New Job을 클릭합니다. build의 이름을 임의로 입력합니다. 여기서는 build_deploy_kube 라고 하겠습니다. Template는 미리 생성해 놓은 build_vm을 선택합니다. 
+1. Create Job을 클릭합니다. build의 이름을 임의로 입력합니다. 여기서는 build_deploy_kube 라고 하겠습니다. Template는 미리 생성해 놓은 build_vm을 선택합니다. 
    빌드시에 사용할 VM 인스턴스를 선택하는 단계입니다.
 ![](images/devcs_build2.png)
 

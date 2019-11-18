@@ -86,7 +86,7 @@
     Password for 'https://xxxxx@oracle.com@devcs1-mcd100.developer.ocp.oraclecloud.com':
     ```
 
-    원격지 Git 주소는 Developer Cloud의 다음 화면에서 복사할 수 있습니다.
+    원격지 Git 주소는 아래 그림의 Developer Cloud Console 에서 복사할 수 있습니다. (왼쪽 메뉴에서 Project Home클릭 -> 오른쪽 Git 에서 Clone클릭 -> 아래 복사 아이콘 클릭)
 
     git 비밀번호는 제공된 클라우드 계정에 대한 비밀번호(Welcome123456#) 를 입력하시면 됩니다.
 
@@ -99,13 +99,13 @@
     ```
     원격지의 git repository와 현재 디렉토리가 정상적으로 연결이 되었습니다. 
     
-1. 이제 실습 개발 환경에 있는 소스를 올려보도록 하겠습니다.
+3. 이제 실습 개발 환경에 있는 소스를 올려보도록 하겠습니다.
     ```
     git add .
     git commit -m 'change1'
     git push
     ```
-1. Developer Cloud 에 가서 소스가 모두 반영되었는지 확인해보도록 하겠습니다. Git 메뉴를 클릭하면 파일들이 생성된 것을 확인할 수 있습니다.
+4. Developer Cloud 에 가서 소스가 모두 반영되었는지 확인해보도록 하겠습니다. Git 메뉴를 클릭하면 파일들이 생성된 것을 확인할 수 있습니다.
    ![](images/devcs_git_push.png)
 
 
