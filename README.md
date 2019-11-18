@@ -15,12 +15,15 @@
 * OCI (Oracle Cloud Infrastructure) 계정
 * SSH Terminal (windows Putty, macOS Terminal 등)
 
-## 실습을 위한 클라이언트 개발 환경
-* 실습 개발 환경 IP : 140.238.18.26
+## 제공 환경 정보
+* 실습 개발 환경(Linux) IP : 140.238.18.26
 * 사용자명 / Password : Paper로 제공
-* 클라우드 접속 계정
-> 접속 방법  
-> ssh -i id_rsa 사용자명@140.238.18.26
+* 오라클 클라우드 접속 계정 : Paper로 제공
+  
+> 실습 개발 환경 접속 방법(Linux)
+> 
+> 사용자 PC에서 putty 프로그램을 실행해서 접속합니다.<br>
+> (참고 : Mac : ssh -i id_rsa 사용자명@140.238.18.26)
 
 ## 시나리오
 ![](images/sceneall.png)
@@ -29,6 +32,6 @@
 ## Hands-On 순서
 
 1. [Oracle Kubernetes 환경 확인하기](./oke.md)
-1. [Developer Cloud Service 에 접속하기](./devcs.md)
-1. [Developer Cloud Service 에서 Build 생성하기](./cicd.md)
-1. [Application 확인, CI/CD 를 통한 자동화](./app.md)
+2. [Developer Cloud Service 에 접속하기](./devcs.md)
+3. [Developer Cloud Service 에서 Build 생성하기](./cicd.md)
+4. [Application 확인, CI/CD 를 통한 자동화](./app.md)
