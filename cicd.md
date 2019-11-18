@@ -141,7 +141,7 @@
 2. 위쪽에 Save 버튼을 누릅니다.
 
 ## **STEP 5**: Build
-3. 준비가 되었습니다. 바로 눌러서 Build를 해보겠습니다. Build Now 버튼을 누릅니다.
+3. 준비가 되었습니다. 바로 눌러서 Build를 해보겠습니다. Build Now 버튼을 누릅니다. 이 과정은 처음 실행시에는 수분 정도 시간이 소요됩니다.
    ![](images/devcs_step_buildnow.png)
 4. 앞에서 설정한 파라미터 값을 변경할 수 있는 Popup이 뜹니다. Default 값을 이미 입력했기 때문에 Build Now 를 바로 누릅니다.
     ![](images/devcs_step_buildnow2.png)

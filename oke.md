@@ -48,10 +48,12 @@
 2. 다른 명령어도 확인해 보도록 하겠습니다.
    ```
     $ kubectl get node
+    
     NAME        STATUS   ROLES   AGE    VERSION
     10.0.10.2   Ready    node    139m   v1.13.5
     
     $ kubectl get service
+    
     NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
     kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   145m
 
@@ -65,9 +67,9 @@
 
 1. 아래 명령어를 통해서 서비스의 상태를 확인 해 봅니다. mysql이 배포가 된 것을 확인할 수 있습니다.       
     ```
-    kubectl get deployment
-    kubectl get pod
-    kubectl get service
+    $ kubectl get deployment
+    $ kubectl get pod
+    $ kubectl get service
     ```
    ![](images/oke_mysql_kubectl.png)
    
