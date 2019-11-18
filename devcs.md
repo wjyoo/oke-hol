@@ -81,7 +81,7 @@
 2. 이 파일들을 Remote에 있는 Developer Cloud의 git Repository 에 push하기 위해 다음의 순서로 실행합니다.
    ```
     git init
-    git remote add origin [원격지 Git 주소]
+    git remote add origin [원격지 Git 주소 : 아래 그림 참조]
     git pull origin master
     Password for 'https://xxxxx@oracle.com@devcs1-mcd100.developer.ocp.oraclecloud.com':
     ```

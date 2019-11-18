@@ -23,7 +23,7 @@
 1. 여러분들에게 할당된 리전을 선택합니다. 
    Tenancy : mcd133 ~ mcd150 까지는 Tokyo 리전을 선택합니다. 나머지는 서울을 사용하시면 됩니다.
     ![](images/region_select.png)
-1. 좌측에 Compartment는 부서와 같은 개념으로 MCD라는 Compartment를 준비해 놓았습니다.
+1. 좌측에 Compartment는 부서와 같은 개념입니다. MCD라는 Compartment를 준비해 놓았습니다.
    ![](images/pick_compartment.png)
 1. MCD 를 선택합니다.
 ![](images/mcd_select.png)
