@@ -116,7 +116,7 @@
         Source : 
         Context Root in Workspace 선택
     ```
-    
+
     ![](images/devcs_step_dockerbuild2.png)    
 
 1. 동일한 과정으로 Docker Push를 선택하고 아래의 정보를 입력합니다. 
@@ -129,7 +129,7 @@
     ![](images/devcs_step_dockerbuild4.png)
 
 ## **STEP 4**: Kubernetes 에 Deploy 설정
-1. 마지막으로 Unix Shell을 선택합니다.
+1. 마지막으로 Add Step --> Unix Shell을 선택합니다.
    ![](images/devcs_step_shell1.png)
 
 1. kubernetes 에 deploy하는 단계 입니다. kube-oke-sample.yaml 파일을 실행하는 스크립트를 호출하기 위해 아래의 정보를 그대로 복사해서 입력합니다.  
