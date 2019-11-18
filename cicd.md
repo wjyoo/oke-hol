@@ -61,7 +61,6 @@
     ![](images/devcs_param3.png)
 
 1. Add Parameter -> String Parameter를 두번 더 합니다.
-이 Lab에서는 **sample-app** 이라는 이름을 사용합니다.
     ![](images/devcs_param5.png)
     
     > NAME : **OCIR**<br>
@@ -76,7 +75,7 @@
     > Default Value 형식 : **{tenancy_namespace}**/sample-app
       
       ``` 
-      예) Default Value : idsufmye3lml/sample-app 
+      예) Default Value : idsufmye3lml/sample-app
       ```
 
     - tenancy_namespace 는 실습개발환경에서 확인하실 수 있습니다.
@@ -92,7 +91,7 @@
         ![](images/oci_tenancy_namespace.gif)
         </details>        
         
-1. 중간에 저장을 한번 하기 위해 Save버튼을 누릅니다.
+2. 중간에 저장을 한번 하기 위해 Save버튼을 누릅니다.
 ![](images/devcs_param.png)
 
 ## **STEP 3**: Docker Login, Build, Push
