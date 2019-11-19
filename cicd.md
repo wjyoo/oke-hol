@@ -37,7 +37,7 @@
 1. 먼저 Kubernetes 주소를 변수로 입력합니다.   
     ![](images/devcs_param2.png)
     
-    > Name : <b>KUBE_URL</b><br>
+    > Name : <b><font color=red>KUBE_URL</font></b><br>
     > Default Value : https://[Kubernetes Master 서버 주소]
     
     앞에 https 를 반드시 입력해야 합니다.
@@ -51,16 +51,16 @@
     또한 OCI 콘솔의 Containers->Clusters에서 확인이 가능합니다.
     ![](images/devcs_param21.png)
     
-1. Add Parameter -> String Parameter를 선택해서 다음을 입력합니다.
+1. <font color=red>Add Parameter -> String Parameter</font>를 선택해서 다음을 입력합니다.
     
-    > Name: <b>KUBE_TOKEN</b><br>
+    > Name: <b><font color=red>KUBE_TOKEN</font></b><br>
     > Default Value : 아래의 명령어로 실습 개발 환경에서 실행을 한 후 가장 아래 부분에 나오는 Token값을 복사합니다.
     ```
     $ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep oke-admin | awk '{print $1}')
     ```
     ![](images/devcs_param3.png)
 
-1. Add Parameter -> String Parameter를 두번 더 합니다.
+1. <font color=red>Add Parameter -> String Parameter</font>를 두 번 더 합니다.
     ![](images/devcs_param5.png)
     
     > NAME : **OCIR**<br>
@@ -114,7 +114,7 @@
 
     ![](images/devcs_step_dockerbuild2.png)    
 
-1. 동일한 과정으로 Add Step --> Docker --> Docker Push를 선택하고 아래의 정보를 입력합니다. 
+1. 동일한 과정으로 <font color=red>Add Step --> Docker --> Docker Push</font>를 선택하고 아래의 정보를 입력합니다. 
     ```
     Docker Push
     Image Name : $IMAGE_NAME
