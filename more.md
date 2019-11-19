@@ -12,13 +12,19 @@
     ```
 
 3. Local PC에서 개발환경 서버로 위 포트로 Tunneling을 합니다. 별도의 창을 띄워 놓아야 합니다.
-   ```
-    윈도우 : putty로 아래와 같이 설정해서 접속
-    ```
 
-    ```
-    Mac : ssh -i id_rsa -L 8001:127.0.0.1:포트 사용자명@140.238.18.26
-    ```
+1. 새로운 Putty를 실행합니다.
+    Connection->SSH->Tunnels를 선택합니다.
+    소스는 8001을 선택합니다.
+    kubeproxy 에 나온 주소(127.0.0.1:포트)를 오른쪽 창의 Destination에 입력합니다.
+
+    ![](images/sshtunnel1.png)
+
+1. Add 버튼을 누릅니다.   
+    ![](images/sshtunnel2.png)
+
+    > 참고) Mac : ssh -i id_rsa -L 8001:127.0.0.1:포트 사용자명@140.238.18.26
+
 4. 브라우저에서 다음의 주소로 접속해 봅니다.
 http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login
 

@@ -34,18 +34,24 @@
 7. Node Pools에 1개의 Node가 생성되어 있는 것을 확인합니다. 
 ![](images/oci_oke_cluster3.png)
 
-1. 이제 여러분의 실습 개발 환경에서 위 클러스터에 접속을 해보도록 하겠습니다. 먼저 ssh로 각자의 개발환경에 접속합니다.
-   
-    ```
-    ssh -i id_rsa 사용자명@140.238.18.26
-    ```
-1. 이 개발 환경에서는 여러분의 kubernetes cluster에 대한 정보가 .kube 디렉토리에 이미 설정되어 있습니다. kubernetes cli 툴을 통해서 클러스터의 접속 정보를 확인해 봅니다. 
+1. 이제 여러분의 실습 개발 환경에서 위 클러스터에 접속을 해보도록 하겠습니다. 먼저 putty로 각자의 개발환경에 접속합니다.
+   <details>
+        <summary><i>참고) Putty 실행방법
+        </i></summary>
+        
+    접속은 Putty 프로그램을 활용합니다.
+    ![](images/putty1.png)
+    
+    ![](images/putty2.png)
+        </details>
+
+2. 이 개발 환경에서는 여러분의 kubernetes cluster에 대한 정보가 .kube 디렉토리에 이미 설정되어 있습니다. kubernetes cli 툴을 통해서 클러스터의 접속 정보를 확인해 봅니다. 
     ```
     $ kubectl cluster-info
     ```
     이 명령어를 치시면 아래와 같이 나오게 됩니다.
     ![](images/oke_cli_cluster-info.png)
-2. 다른 명령어도 확인해 보도록 하겠습니다.
+3. 다른 명령어도 확인해 보도록 하겠습니다.
    ```
     $ kubectl get node
     
@@ -57,7 +63,7 @@
     NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
     kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   145m
 
-1. kubernetes에 mysql 를 배포해서 띄워 보도록 하겠습니다. 예제에서 사용할 스키마까지 생성되는 docker image를 바로 배포하도록 하겠습니다.
+4. kubernetes에 mysql 를 배포해서 띄워 보도록 하겠습니다. 예제에서 사용할 스키마까지 생성되는 docker image를 바로 배포하도록 하겠습니다.
     아래 명령어를 입력합니다.
     ```
     $ kubectl -f mysql-deployment.yaml apply
@@ -65,7 +71,7 @@
 
     ![](images/oke_mysql_deploy.png)
 
-1. 아래 명령어를 통해서 서비스의 상태를 확인 해 봅니다. mysql이 배포가 된 것을 확인할 수 있습니다.       
+5. 아래 명령어를 통해서 서비스의 상태를 확인 해 봅니다. mysql이 배포가 된 것을 확인할 수 있습니다.       
     ```
     $ kubectl get deployment
     $ kubectl get pod
