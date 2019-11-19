@@ -39,9 +39,10 @@
         <summary><i>참고) Putty 실행방법
         </i></summary>
         
-    접속은 Putty 프로그램을 활용합니다.
-    ![](images/putty1.png)
+    접속은 Putty 프로그램을 사용합니다.
     
+    ![](images/putty1.png)
+
     ![](images/putty2.png)
         </details>
 
