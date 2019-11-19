@@ -24,7 +24,8 @@
 본 실습을 위해서 각 개인별로 한 개의 Oracle Cloud Trial과 실습을 진행하기 위한 클라이언트 환경을 제공합니다.  
 클라이언트 환경 접속에 대한 정보는 별도로 제공합니다.  
 
-접속은 Putty 프로그램을 활용합니다.
+접속은 Putty 프로그램을 사용합니다.
+
 ![](images/putty1.png)
 
 ![](images/putty2.png)
