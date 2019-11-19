@@ -17,7 +17,7 @@
 
 ## 제공 환경 정보
 * 실습 개발 환경(Linux) IP : 140.238.18.26
-* 사용자명 / Password : Paper로 제공
+* 실습환경계정 / Password : Paper로 제공
 * 오라클 클라우드 접속 계정 : Paper로 제공
   
 ## 실습을 위한 클라이언트 환경 및 접속 
@@ -32,7 +32,7 @@
 
 > 참고 : macOS 사용자는 다음 링크에서 키를 다운로드 받아 압축 해제한 후 다음과 같이 접속합니다.
 > 
-> ssh -i id_rsa 사용자명@140.238.18.26
+> ssh -i id_rsa 실습환경계정@140.238.18.26
 > 
 > [sshkey 다운로드](https://objectstorage.ap-seoul-1.oraclecloud.com/n/apackrsct01/b/bucket-20190614-1639/o/sshkeys.zip)
 
